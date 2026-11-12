@@ -6,3 +6,6 @@
     1. unter dem Namen auf der Ersten Seite 
     2. unter dem Datum auf der Zweiten Seite 
     3. am Ende der Gewissenserklärung
+
+# Inspiration 
+die grobe Strukur ist von einem Dokument des dfg-vk inspiriert
