@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+
+\usepackage[ngerman]{babel} %last language is selected, to switch use %selectlanguage{}
+\usepackage{biblatex}
+\usepackage[utf8]{inputenc} %erlaubt äöü einfach zu schreiben
+\usepackage[a4paper, margin=1in]{geometry}
+\pagestyle{empty} %gets rid of pagenumbers
+\usepackage{datetime}
+\renewcommand{\dateseparator}{.}
+
+
+\date{\today}
+\newcommand{\Vorname}{Max}
+\newcommand{\Nachname}{Mustermensch}
+\newcommand{\Strasse}{Straßenallee}
+\newcommand{\Hausnummer}{161}
+\newcommand{\Postleitzahl}{1312}
+\newcommand{\Wohnort}{Ulm}
+\newcommand{\Ort}{Ulm}
+\newcommand{\Geburtsdatum}{DD.MM.JJJJ}
+\newcommand{\Geburtsort}{Neu-Ulm}
+\newcommand{\Staatsangehorigkeit}{deutsch}
+\newcommand{\Familienstand}{ledig}
+\newcommand{\Kinder}{2 Kinder: 1 Jahr und 3 Jahre} %keine Namen nötig!!! ... es ist am einfachsten hier einfach das Kinder dazuzuschreiben für den fall n = 1, Alter
+\newcommand{\Eltern}{1 Mutter} % wieder keine Namen nötig!!!
+\newcommand{\Geschwister}{2 Brüder, 1 Schwester}
+\newcommand{\Konfession}{pastafarisch} %nur nötig wenn in Begründung
+
+\begin{document}
+\noindent
+\begin{minipage}[t]{4cm}
+\Vorname, \Nachname \\
+\Strasse{} \Hausnummer \\ 
+\Postleitzahl{} \Wohnort \\ 
+\\ 
+Geboren am: \\
+\Geburtsdatum
+\end{minipage} \hfill 
+\begin{minipage}[t]{4cm}
+    \Ort, den \ddmmyyyydate{\today}
+\end{minipage}\\ 
+\\[3cm]
+\begin{minipage}[t]{15cm}
+Bundesamt für das Personalmanagement der Bundeswehr\\
+- Wehrersatzbehörde -\\
+Militärringstraße 1000\\
+50737 Köln
+\end{minipage}
+\\[3cm]
+\textbf{Antrag auf Kriegsdienstverweigerung}
+\\[1cm]
+Sehr geehrte Damen und Herren, \textit{Menschen} \\[0.25cm] 
+hiermit verweigere ich den Kriegsdienst mit der Waffe aus Gewissensgründen gemäß Artikel 4, Absatz 3 des Grundgesetzes.
+\\[2cm]
+Mit freundlichen Grüßen\\
+\Vorname{} \Nachname\\ 
+%Hier muss Handschritftlich unterschrieben werden
+\vfill
+\noindent
+\textbf{Anlagen}\\
+Tabellarischer Lebenslauf\\ 
+Ausführliche schriftliche Begründung
+\newpage 
+\noindent
+{\Large \textbf{Lebenslauf:}}\\[2cm]
+\textbf{Persönliche Daten:}\\[1cm]
+\Vorname{} \Nachname\\
+geboren in \Geburtsort, \Geburtsdatum\\ 
+wohnhaft in \Strasse{} \Hausnummer\\ 
+\Postleitzahl{} \Wohnort\\
+Staatsangehörigkeit: \Staatsangehorigkeit\\ 
+\Familienstand, \Kinder\\
+\Eltern, \Geschwister\\
+Konfession: \Konfession\\[2cm]
+\textbf{Werdegang:}\\[1cm]
+Grundschule 1 (Hamburg, 2009-2011)\\
+Grundschule 2 (Ulm, 2011-2013)\\
+weiterführende Schule 1 (Berlin, 2013-2017)\\
+weiterführende Schule 2 (Köln, 2017-2019)\\
+Ausbildung/Studium (Jena, 2020-2025)\\
+aktuelle Tätigkeit (seit, WO)\\
+Ehrenamt 1 (Kiel, 2017-2019)\\
+Vereinsmitglied (Erfurt, 2019-2028)\\
+%Besondere Vorkommnisse die in der Begründung auftauchen\\ 
+DD.MM.JJJJ Vorkommniss\\
+\vfill 
+\noindent
+\Ort, den \ddmmyyyydate{\today}\\
+% Hier unterschreiben
+
+
+ 
+
+\end{document}
